@@ -10,23 +10,28 @@ public class Iva {
 		 * y calcula cuál será el precio final con el IVA aplicado.*/
 		
 		//Declaramos la constante IVA y la variable en donde el usuario introducirá el precio
-		final double valorIva = 1.21;
+		final double valorIva = 21;
 		double precioIntroducido;
+		double precioFinal;
 		
 		//Invocamos el Scanner
 		
-		Scanner porcentaje = new Scanner(System.in);
+		Scanner porcent = new Scanner(System.in);
 		
 		//Solicitamos el precio al usuario
 		
 		System.out.println("Introduzca el precio :");
-		precioIntroducido = porcentaje.nextDouble();
+		precioIntroducido = porcent.nextDouble();
 		
-		//procedemos a imprimir en pantalla y hacer la multiplicacion 
+		//Hacemos la operacion iva*precioIntroducido/100
 		
-		System.out.println("El precio con IVA es: " + precioIntroducido * valorIva);
+		precioFinal = (valorIva *  precioIntroducido / 100) + precioIntroducido;
 		
-		porcentaje.close();
+		
+		System.out.println("El precio con IVA es: " + precioFinal);
+		
+		
+		porcent.close();
 		
 		
 		// TODO Auto-generated method stub
