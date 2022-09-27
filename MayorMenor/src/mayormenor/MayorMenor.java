@@ -29,7 +29,7 @@ public class MayorMenor {
 		 
 		
 		comparar = 18<edad?true:false;
-		System.out.println("Eres mayor de edad?: " + comparar);
+		System.out.println("Eres menor de edad?: " + comparar);
 		comparar2 = 18>=edad?false:true;
 		System.out.println("Eres mayor de edad?: " + comparar2);
 		
