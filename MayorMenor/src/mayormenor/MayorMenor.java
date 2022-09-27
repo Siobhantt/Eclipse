@@ -12,6 +12,8 @@ public class MayorMenor {
 		int edad;
 		final int MAYORIA_EDAD;
 		int menoriaEdad;
+		boolean comparar;
+		boolean comparar2;
 		
 		//Establecemos la constante 18
 		
@@ -23,9 +25,18 @@ public class MayorMenor {
 		
 		//imprimimos en pantalla la solicitud
 		System.out.println("Introduzca su edad: ");
-		Edad = sc.nextInt();
+		edad = sc.nextInt();
 		 
-		Edad = 18<Edad?falsa:true;
+		
+		comparar = 18<edad?true:false;
+		System.out.println("Eres mayor de edad?: " + comparar);
+		comparar2 = 18>=edad?false:true;
+		System.out.println("Eres mayor de edad?: " + comparar2);
+		
+		
+		System.out.println(comparar2);
+		
+		
 		
 		
 
